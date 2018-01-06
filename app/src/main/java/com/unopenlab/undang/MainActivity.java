@@ -7,7 +7,7 @@ import android.webkit.WebView;
 public class MainActivity extends AppCompatActivity {
 
     private WebView mMainWebView;
-    private static final String MAIN_URL = "https://raw.githubusercontent.com/UnopenLab/Undang-Web/master/index.html";
+    private static final String MAIN_URL = "http://undang.twpower.me:6231/";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
