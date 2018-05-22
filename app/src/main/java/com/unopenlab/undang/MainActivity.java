@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
             mMainWebView.loadUrl(ServerInfoManager.getInstance().getBaseUrl());
         } catch(ServerInfoManagerException e) {
             Log.e(TAG, "onCreate: " + e.getMessage());
-            // TODO: 2018. 5. 22. Error 처리 
+            // TODO: 2018. 5. 22. Error 처리
         }
     }
 
