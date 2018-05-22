@@ -14,4 +14,10 @@ public class ServerInfoManagerTest {
         manager.init("test");
         assertEquals("test", manager.getBaseUrl());
     }
+
+    @Test(expected = ServerInfoManagerException.class)
+    public void getBaseUrlWithoutInitialize() throws ServerInfoManagerException {
+        ServerInfoManager manager = ServerInfoManager.getInstance();
+        manager.getBaseUrl();
+    }
 }
